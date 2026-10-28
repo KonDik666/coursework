@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments :: head('Роли пользователей')}"></head>
+<body>
+<nav th:replace="~{fragments :: nav}"></nav>
+<main class="container pb-4">
+<h1>Роли пользователей</h1>
+<div th:replace="~{fragments :: messages}"></div>
+<p>Новые пользователи регистрируются с READ_ONLY. Здесь администратор может добавить USER или ADMIN.</p>
+<div class="table-scroll"><table class="table table-bordered table-striped"><thead><tr><th>Логин</th><th>Имя</th><th>Роли</th><th>Добавить роль</th></tr></thead>
+<tbody><tr th:each="user : ${users}">
+    <td th:text="${user.username}"></td><td th:text="${user.name}"></td>
+    <td><span th:each="role : ${user.roles}" th:text="${#strings.replace(role.name, 'ROLE_', '')} + ' '" class="me-1"></span></td>
+    <td><form th:action="@{/users/{id}/roles(id=${user.id})}" method="post" class="d-flex gap-2">
+        <select name="role" class="form-select" aria-label="Добавляемая роль"><option value="USER">USER</option><option value="ADMIN">ADMIN</option></select>
+        <button class="btn btn-primary">Добавить</button>
+    </form></td>
+</tr></tbody></table></div>
+<h2 class="h4">Actuator</h2>
+<p><a th:href="@{/actuator/health}">Состояние</a> · <a th:href="@{/actuator/info}">Информация</a> ·
+<a th:href="@{/actuator/metrics}">Метрики</a> · <a th:href="@{/actuator/mappings}">Маршруты</a></p>
+</main>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments :: head('Регистрация')}"></head>
+<body>
+<nav th:replace="~{fragments :: nav}"></nav>
+<main class="container pb-4 auth-page">
+<div class="col-md-7 mx-auto"><h1>Регистрация</h1>
+<p th:if="${param.success}" class="alert alert-success">Регистрация завершена. Назначена роль READ_ONLY. Теперь можно войти.</p>
+<form th:action="@{/register/save}" th:object="${user}" method="post">
+    <label for="firstName" class="form-label">Имя</label>
+    <input id="firstName" th:field="*{firstName}" type="text" class="form-control" required>
+    <p th:errors="*{firstName}" class="text-danger"></p>
+    <label for="lastName" class="form-label">Фамилия</label>
+    <input id="lastName" th:field="*{lastName}" type="text" class="form-control" required>
+    <p th:errors="*{lastName}" class="text-danger"></p>
+    <label for="username" class="form-label">Логин</label>
+    <input id="username" th:field="*{username}" type="text" class="form-control" required>
+    <p th:errors="*{username}" class="text-danger"></p>
+    <label for="password" class="form-label">Пароль</label>
+    <input id="password" th:field="*{password}" type="password" class="form-control" required>
+    <p th:errors="*{password}" class="text-danger"></p><p class="text-muted">Логин: 3–40 латинских букв, цифр или символов _ . -. Пароль: от 6 до 60 символов.</p>
+<button class="btn btn-primary">Зарегистрироваться</button>
+<a class="ms-2" th:href="@{/login}">Войти</a>
+</form></div>
+</main>
+</body>
+</html>

@@ -1,0 +1,315 @@
+2026-10-28 19:43:13.243  INFO 44780 --- [main] P.PurchaseManagementApplication          : Starting PurchaseManagementApplication using Java 17.0.20.1 on DESKTOP-MCL8UCT with PID 44780 (C:\Users\1\Desktop\proekt\spring-boot-coursework\target\classes started by 1 in C:\Users\1\Desktop\proekt\spring-boot-coursework)
+2026-10-28 19:43:13.244  INFO 44780 --- [main] P.PurchaseManagementApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-10-28 19:43:13.721  INFO 44780 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-28 19:43:13.758  INFO 44780 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 4 JPA repository interfaces.
+2026-10-28 19:43:14.163  INFO 44780 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2026-10-28 19:43:14.169  INFO 44780 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-28 19:43:14.169  INFO 44780 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2026-10-28 19:43:14.228  INFO 44780 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-10-28 19:43:14.228  INFO 44780 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 960 ms
+2026-10-28 19:43:14.441  INFO 44780 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-10-28 19:43:14.498  INFO 44780 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2026-10-28 19:43:14.639  INFO 44780 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-10-28 19:43:14.711  INFO 44780 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-28 19:43:14.837  INFO 44780 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-28 19:43:14.850  INFO 44780 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2026-10-28 19:43:15.180  INFO 44780 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-10-28 19:43:15.184  INFO 44780 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-28 19:43:15.681  INFO 44780 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4a013b23, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7f20dfd5, org.springframework.security.web.context.SecurityContextPersistenceFilter@2c51c756, org.springframework.security.web.header.HeaderWriterFilter@3d213a2b, org.springframework.security.web.csrf.CsrfFilter@2c86b0ea, org.springframework.security.web.authentication.logout.LogoutFilter@49770ef9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5b76b891, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1ddc889b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ec3689b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15651402, org.springframework.security.web.session.SessionManagementFilter@78a34c47, org.springframework.security.web.access.ExceptionTranslationFilter@31cddb11, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2a5ed225]
+2026-10-28 19:43:15.859  INFO 44780 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-10-28 19:43:16.093  INFO 44780 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2026-10-28 19:43:16.140  INFO 44780 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2026-10-28 19:43:16.150  INFO 44780 --- [main] P.PurchaseManagementApplication          : Started PurchaseManagementApplication in 3.12 seconds (JVM running for 3.301)
+2026-10-28 19:44:07.543  INFO 44780 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-28 19:44:07.543  INFO 44780 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-28 19:44:07.544  INFO 44780 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-10-28 19:45:25.119  INFO 44780 --- [http-nio-8080-exec-7] P.service.UserServiceImpl                : Регистрация пользователя test с ролью READ_ONLY
+2026-10-28 19:45:37.114  WARN 44780 --- [http-nio-8080-exec-10] P.config.AuthenticationLogging           : Неуспешная попытка входа
+2026-10-28 19:45:53.025  INFO 44780 --- [http-nio-8080-exec-3] P.config.AuthenticationLogging           : Вход пользователя test
+2026-10-28 19:45:53.048  INFO 44780 --- [http-nio-8080-exec-4] P.controller.ProductController           : Пользователь test открыл список покупок
+2026-10-28 19:46:09.431  INFO 44780 --- [http-nio-8080-exec-5] P.controller.ShopController              : Пользователь test открыл список магазинов
+2026-10-28 19:46:41.988  INFO 44780 --- [http-nio-8080-exec-8] P.config.AuthenticationLogging           : Выход пользователя test
+2026-10-28 19:46:47.881  INFO 44780 --- [http-nio-8080-exec-10] P.config.AuthenticationLogging           : Вход пользователя admin
+2026-10-28 19:46:47.891  INFO 44780 --- [http-nio-8080-exec-1] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 19:46:51.125  INFO 44780 --- [http-nio-8080-exec-2] P.controller.ShopController              : Пользователь admin открыл список магазинов
+2026-10-28 19:47:05.981  INFO 44780 --- [http-nio-8080-exec-4] PurchaseManagement.service.ShopService   : Пользователь admin сохранил магазин id=1
+2026-10-28 19:47:05.997  INFO 44780 --- [http-nio-8080-exec-5] P.controller.ShopController              : Пользователь admin открыл список магазинов
+2026-10-28 19:47:29.914  INFO 44780 --- [http-nio-8080-exec-7] PurchaseManagement.service.ShopService   : Пользователь admin сохранил магазин id=2
+2026-10-28 19:47:29.923  INFO 44780 --- [http-nio-8080-exec-8] P.controller.ShopController              : Пользователь admin открыл список магазинов
+2026-10-28 19:47:45.724  INFO 44780 --- [http-nio-8080-exec-1] PurchaseManagement.service.ShopService   : Пользователь admin сохранил магазин id=3
+2026-10-28 19:47:45.733  INFO 44780 --- [http-nio-8080-exec-2] P.controller.ShopController              : Пользователь admin открыл список магазинов
+2026-10-28 19:47:55.515  INFO 44780 --- [http-nio-8080-exec-3] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 19:48:22.207  INFO 44780 --- [http-nio-8080-exec-5] P.service.ProductService                 : Пользователь admin сохранил покупку id=1
+2026-10-28 19:48:22.219  INFO 44780 --- [http-nio-8080-exec-6] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 19:49:12.198  INFO 44780 --- [http-nio-8080-exec-9] P.service.ProductService                 : Пользователь admin сохранил покупку id=2
+2026-10-28 19:49:12.209  INFO 44780 --- [http-nio-8080-exec-10] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 19:49:28.568  INFO 44780 --- [http-nio-8080-exec-2] P.service.ProductService                 : Пользователь admin сохранил покупку id=3
+2026-10-28 19:49:28.579  INFO 44780 --- [http-nio-8080-exec-3] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 19:49:57.144  INFO 44780 --- [http-nio-8080-exec-5] P.service.ProductService                 : Пользователь admin сохранил покупку id=4
+2026-10-28 19:49:57.154  INFO 44780 --- [http-nio-8080-exec-6] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 19:50:49.540  INFO 44780 --- [http-nio-8080-exec-9] P.service.ProductService                 : Пользователь admin сохранил покупку id=5
+2026-10-28 19:50:49.550  INFO 44780 --- [http-nio-8080-exec-10] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 19:51:02.945  INFO 44780 --- [http-nio-8080-exec-2] P.service.ProductService                 : Пользователь admin сохранил покупку id=6
+2026-10-28 19:51:02.955  INFO 44780 --- [http-nio-8080-exec-3] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 19:51:14.244  INFO 44780 --- [http-nio-8080-exec-5] P.service.ProductService                 : Пользователь admin сохранил покупку id=6
+2026-10-28 19:51:14.254  INFO 44780 --- [http-nio-8080-exec-6] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 19:52:07.343  INFO 44780 --- [http-nio-8080-exec-3] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 19:52:12.205  INFO 44780 --- [http-nio-8080-exec-5] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 19:56:16.079  INFO 44780 --- [http-nio-8080-exec-4] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 19:56:16.807  INFO 44780 --- [http-nio-8080-exec-5] P.controller.ShopController              : Пользователь admin открыл список магазинов
+2026-10-28 19:56:28.592  INFO 44780 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-28 19:56:28.593  INFO 44780 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-10-28 19:56:28.594  INFO 44780 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-10-28 19:56:34.380  INFO 3540 --- [main] P.PurchaseManagementApplication          : Starting PurchaseManagementApplication using Java 17.0.20.1 on DESKTOP-MCL8UCT with PID 3540 (C:\Users\1\Desktop\proekt\spring-boot-coursework\target\classes started by 1 in C:\Users\1\Desktop\proekt\spring-boot-coursework)
+2026-10-28 19:56:34.381  INFO 3540 --- [main] P.PurchaseManagementApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-10-28 19:56:34.837  INFO 3540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-28 19:56:34.874  INFO 3540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 4 JPA repository interfaces.
+2026-10-28 19:56:35.239  INFO 3540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2026-10-28 19:56:35.244  INFO 3540 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-28 19:56:35.244  INFO 3540 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2026-10-28 19:56:35.297  INFO 3540 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-10-28 19:56:35.297  INFO 3540 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 891 ms
+2026-10-28 19:56:35.546  INFO 3540 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-10-28 19:56:35.605  INFO 3540 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2026-10-28 19:56:35.716  INFO 3540 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-10-28 19:56:35.776  INFO 3540 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-28 19:56:35.898  INFO 3540 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-28 19:56:35.913  INFO 3540 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2026-10-28 19:56:36.230  INFO 3540 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-10-28 19:56:36.234  INFO 3540 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-28 19:56:36.750  INFO 3540 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@32430075, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a45e29f, org.springframework.security.web.context.SecurityContextPersistenceFilter@7c07023, org.springframework.security.web.header.HeaderWriterFilter@12478b4e, org.springframework.security.web.csrf.CsrfFilter@257d3968, org.springframework.security.web.authentication.logout.LogoutFilter@4e481512, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@44aa5585, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@774189d0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@22c4354d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@44580de0, org.springframework.security.web.session.SessionManagementFilter@18918d70, org.springframework.security.web.access.ExceptionTranslationFilter@152d2a58, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@c3ca482]
+2026-10-28 19:56:36.944  INFO 3540 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-10-28 19:56:37.168  INFO 3540 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2026-10-28 19:56:37.200  INFO 3540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2026-10-28 19:56:37.208  INFO 3540 --- [main] P.PurchaseManagementApplication          : Started PurchaseManagementApplication in 3.017 seconds (JVM running for 3.21)
+2026-10-28 19:56:37.959  INFO 3540 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-28 19:56:37.959  INFO 3540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-28 19:56:37.960  INFO 3540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-10-28 19:56:44.860  INFO 3540 --- [http-nio-8080-exec-3] P.config.AuthenticationLogging           : Вход пользователя admin
+2026-10-28 19:56:44.896  INFO 3540 --- [http-nio-8080-exec-4] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 19:57:07.939  INFO 3540 --- [http-nio-8080-exec-6] P.controller.CalculationController       : Пользователь admin выполнил проверку бюджета
+2026-10-28 19:57:53.634  INFO 3540 --- [http-nio-8080-exec-1] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 19:57:54.229  INFO 3540 --- [http-nio-8080-exec-2] P.controller.ShopController              : Пользователь admin открыл список магазинов
+2026-10-28 19:58:02.342  INFO 3540 --- [http-nio-8080-exec-5] P.service.UserServiceImpl                : Пользователь admin добавил роль USER пользователю test
+2026-10-28 19:58:26.883  INFO 3540 --- [http-nio-8080-exec-7] P.config.AuthenticationLogging           : Выход пользователя admin
+2026-10-28 19:58:35.371  INFO 3540 --- [http-nio-8080-exec-9] P.config.AuthenticationLogging           : Вход пользователя test
+2026-10-28 19:58:35.387  INFO 3540 --- [http-nio-8080-exec-10] P.controller.ProductController           : Пользователь test открыл список покупок
+2026-10-28 19:58:38.041  INFO 3540 --- [http-nio-8080-exec-1] P.controller.ProductController           : Пользователь test открыл список покупок
+2026-10-28 19:58:39.027  INFO 3540 --- [http-nio-8080-exec-2] P.controller.ShopController              : Пользователь test открыл список магазинов
+2026-10-28 19:58:41.077  INFO 3540 --- [http-nio-8080-exec-4] P.controller.ShopController              : Пользователь test открыл список магазинов
+2026-10-28 19:58:41.692  INFO 3540 --- [http-nio-8080-exec-5] P.controller.ProductController           : Пользователь test открыл список покупок
+2026-10-28 19:58:52.044  INFO 3540 --- [http-nio-8080-exec-7] P.controller.ProductController           : Пользователь test открыл список покупок
+2026-10-28 19:58:58.912  INFO 3540 --- [http-nio-8080-exec-10] P.controller.ShopController              : Пользователь test открыл список магазинов
+2026-10-28 20:01:15.185  INFO 3540 --- [http-nio-8080-exec-4] PurchaseManagement.service.ShopService   : Пользователь test сохранил магазин id=4
+2026-10-28 20:01:15.194  INFO 3540 --- [http-nio-8080-exec-5] P.controller.ShopController              : Пользователь test открыл список магазинов
+2026-10-28 20:01:32.267  INFO 3540 --- [http-nio-8080-exec-7] PurchaseManagement.service.ShopService   : Пользователь test сохранил магазин id=5
+2026-10-28 20:01:32.276  INFO 3540 --- [http-nio-8080-exec-8] P.controller.ShopController              : Пользователь test открыл список магазинов
+2026-10-28 20:01:35.573  INFO 3540 --- [http-nio-8080-exec-9] P.controller.ProductController           : Пользователь test открыл список покупок
+2026-10-28 20:01:56.370  INFO 3540 --- [http-nio-8080-exec-1] P.service.ProductService                 : Пользователь test сохранил покупку id=7
+2026-10-28 20:01:56.380  INFO 3540 --- [http-nio-8080-exec-2] P.controller.ProductController           : Пользователь test открыл список покупок
+2026-10-28 20:02:09.148  INFO 3540 --- [http-nio-8080-exec-5] P.service.ProductService                 : Пользователь test сохранил покупку id=8
+2026-10-28 20:02:09.158  INFO 3540 --- [http-nio-8080-exec-6] P.controller.ProductController           : Пользователь test открыл список покупок
+2026-10-28 20:02:17.895  INFO 3540 --- [http-nio-8080-exec-8] P.controller.CalculationController       : Пользователь test выполнил проверку бюджета
+2026-10-28 20:02:21.174  INFO 3540 --- [http-nio-8080-exec-10] P.controller.ProductController           : Пользователь test открыл список покупок
+2026-10-28 20:02:24.052  INFO 3540 --- [http-nio-8080-exec-1] P.config.AuthenticationLogging           : Выход пользователя test
+2026-10-28 20:02:27.668  INFO 3540 --- [http-nio-8080-exec-3] P.config.AuthenticationLogging           : Вход пользователя admin
+2026-10-28 20:02:27.678  INFO 3540 --- [http-nio-8080-exec-4] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 20:02:37.634  INFO 3540 --- [http-nio-8080-exec-5] P.controller.ShopController              : Пользователь admin открыл список магазинов
+2026-10-28 20:02:41.352  INFO 3540 --- [http-nio-8080-exec-6] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 20:02:48.709  INFO 3540 --- [http-nio-8080-exec-9] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 20:03:02.591  INFO 3540 --- [http-nio-8080-exec-10] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 20:03:03.190  INFO 3540 --- [http-nio-8080-exec-1] P.controller.ShopController              : Пользователь admin открыл список магазинов
+2026-10-28 20:10:00.462  INFO 3540 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-28 20:10:00.463  INFO 3540 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-10-28 20:10:00.464  INFO 3540 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-10-28 20:10:05.229  INFO 19212 --- [main] P.PurchaseManagementApplication          : Starting PurchaseManagementApplication using Java 17.0.20.1 on DESKTOP-MCL8UCT with PID 19212 (C:\Users\1\Desktop\proekt\spring-boot-coursework\target\classes started by 1 in C:\Users\1\Desktop\proekt\spring-boot-coursework)
+2026-10-28 20:10:05.230  INFO 19212 --- [main] P.PurchaseManagementApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-10-28 20:10:05.673  INFO 19212 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-28 20:10:05.709  INFO 19212 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 4 JPA repository interfaces.
+2026-10-28 20:10:06.134  INFO 19212 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2026-10-28 20:10:06.140  INFO 19212 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-28 20:10:06.140  INFO 19212 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2026-10-28 20:10:06.199  INFO 19212 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-10-28 20:10:06.199  INFO 19212 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 944 ms
+2026-10-28 20:10:06.431  INFO 19212 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-10-28 20:10:06.475  INFO 19212 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2026-10-28 20:10:06.595  INFO 19212 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-10-28 20:10:06.644  INFO 19212 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-28 20:10:06.752  INFO 19212 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-28 20:10:06.767  INFO 19212 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2026-10-28 20:10:07.088  INFO 19212 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-10-28 20:10:07.092  INFO 19212 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-28 20:10:07.618  INFO 19212 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@63e0057a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b76b891, org.springframework.security.web.context.SecurityContextPersistenceFilter@4e481512, org.springframework.security.web.header.HeaderWriterFilter@5ef7ae2f, org.springframework.security.web.csrf.CsrfFilter@18918d70, org.springframework.security.web.authentication.logout.LogoutFilter@77648321, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2a5ed225, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b552b13, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@524dd373, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@611a91df, org.springframework.security.web.session.SessionManagementFilter@b5bddfe, org.springframework.security.web.access.ExceptionTranslationFilter@32f45e15, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24749ad3]
+2026-10-28 20:10:07.823  INFO 19212 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-10-28 20:10:08.054  INFO 19212 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2026-10-28 20:10:08.103  INFO 19212 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2026-10-28 20:10:08.113  INFO 19212 --- [main] P.PurchaseManagementApplication          : Started PurchaseManagementApplication in 3.09 seconds (JVM running for 3.274)
+2026-10-28 20:10:08.995  INFO 19212 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-28 20:10:08.995  INFO 19212 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-28 20:10:08.996  INFO 19212 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-10-28 20:11:47.462  INFO 19212 --- [http-nio-8080-exec-2] P.config.AuthenticationLogging           : Вход пользователя admin
+2026-10-28 20:11:47.502  INFO 19212 --- [http-nio-8080-exec-1] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 20:11:52.309  INFO 19212 --- [http-nio-8080-exec-4] P.controller.ShopController              : Пользователь admin открыл список магазинов
+2026-10-28 20:12:03.226  INFO 19212 --- [http-nio-8080-exec-10] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 20:14:28.746  INFO 19212 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-28 20:14:28.748  INFO 19212 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-10-28 20:14:28.749  INFO 19212 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-10-28 20:14:31.098  INFO 18588 --- [main] P.PurchaseManagementApplication          : Starting PurchaseManagementApplication using Java 17.0.20.1 on DESKTOP-MCL8UCT with PID 18588 (C:\Users\1\Desktop\proekt\spring-boot-coursework\target\classes started by 1 in C:\Users\1\Desktop\proekt\spring-boot-coursework)
+2026-10-28 20:14:31.100  INFO 18588 --- [main] P.PurchaseManagementApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-10-28 20:14:31.568  INFO 18588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-28 20:14:31.602  INFO 18588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 4 JPA repository interfaces.
+2026-10-28 20:14:31.977  INFO 18588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2026-10-28 20:14:31.983  INFO 18588 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-28 20:14:31.983  INFO 18588 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2026-10-28 20:14:32.039  INFO 18588 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-10-28 20:14:32.039  INFO 18588 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 916 ms
+2026-10-28 20:14:32.204  INFO 18588 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-10-28 20:14:32.244  INFO 18588 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2026-10-28 20:14:32.344  INFO 18588 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-10-28 20:14:32.393  INFO 18588 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-28 20:14:32.519  INFO 18588 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-28 20:14:32.534  INFO 18588 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2026-10-28 20:14:32.873  INFO 18588 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-10-28 20:14:32.877  INFO 18588 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-28 20:14:33.375  INFO 18588 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@74d776fb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@406decb2, org.springframework.security.web.context.SecurityContextPersistenceFilter@76eee0b1, org.springframework.security.web.header.HeaderWriterFilter@48f2d51d, org.springframework.security.web.csrf.CsrfFilter@267b678f, org.springframework.security.web.authentication.logout.LogoutFilter@3a012678, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1d9bd4d6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73905dff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5c0d3715, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@122ea8dc, org.springframework.security.web.session.SessionManagementFilter@1018f702, org.springframework.security.web.access.ExceptionTranslationFilter@1e09c0b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@14b4d90b]
+2026-10-28 20:14:33.556  INFO 18588 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-10-28 20:14:33.762  INFO 18588 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2026-10-28 20:14:33.795  INFO 18588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2026-10-28 20:14:33.803  INFO 18588 --- [main] P.PurchaseManagementApplication          : Started PurchaseManagementApplication in 2.903 seconds (JVM running for 3.088)
+2026-10-28 20:14:34.154  INFO 18588 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-28 20:14:34.154  INFO 18588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-28 20:14:34.155  INFO 18588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-10-28 20:15:04.846  INFO 18588 --- [http-nio-8080-exec-5] P.config.AuthenticationLogging           : Вход пользователя admin
+2026-10-28 20:15:04.886  INFO 18588 --- [http-nio-8080-exec-4] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 20:15:12.796  INFO 18588 --- [http-nio-8080-exec-8] P.controller.ShopController              : Пользователь admin открыл список магазинов
+2026-10-28 20:15:15.371  INFO 18588 --- [http-nio-8080-exec-10] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 20:18:13.399  INFO 18588 --- [http-nio-8080-exec-8] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 20:18:14.282  INFO 18588 --- [http-nio-8080-exec-10] P.controller.ShopController              : Пользователь admin открыл список магазинов
+2026-10-28 20:18:24.215  INFO 18588 --- [http-nio-8080-exec-5] P.controller.CalculationController       : Пользователь admin выполнил проверку бюджета
+2026-10-28 20:18:29.237  INFO 18588 --- [http-nio-8080-exec-7] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 20:18:57.084  INFO 18588 --- [http-nio-8080-exec-4] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 20:19:04.268  INFO 18588 --- [http-nio-8080-exec-10] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 20:19:04.744  INFO 18588 --- [http-nio-8080-exec-2] P.controller.ShopController              : Пользователь admin открыл список магазинов
+2026-10-28 20:20:01.722  INFO 18588 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-28 20:20:01.724  INFO 18588 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-10-28 20:20:01.726  INFO 18588 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-10-28 20:20:05.321  INFO 37680 --- [main] P.PurchaseManagementApplication          : Starting PurchaseManagementApplication using Java 17.0.20.1 on DESKTOP-MCL8UCT with PID 37680 (C:\Users\1\Desktop\proekt\spring-boot-coursework\target\classes started by 1 in C:\Users\1\Desktop\proekt\spring-boot-coursework)
+2026-10-28 20:20:05.322  INFO 37680 --- [main] P.PurchaseManagementApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-10-28 20:20:05.757  INFO 37680 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-28 20:20:05.792  INFO 37680 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 4 JPA repository interfaces.
+2026-10-28 20:20:06.150  INFO 37680 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2026-10-28 20:20:06.156  INFO 37680 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-28 20:20:06.156  INFO 37680 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2026-10-28 20:20:06.211  INFO 37680 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-10-28 20:20:06.212  INFO 37680 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 868 ms
+2026-10-28 20:20:06.428  INFO 37680 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-10-28 20:20:06.474  INFO 37680 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2026-10-28 20:20:06.593  INFO 37680 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-10-28 20:20:06.641  INFO 37680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-28 20:20:06.750  INFO 37680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-28 20:20:06.767  INFO 37680 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2026-10-28 20:20:07.117  INFO 37680 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-10-28 20:20:07.121  INFO 37680 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-28 20:20:07.614  INFO 37680 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@24536f07, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@32430075, org.springframework.security.web.context.SecurityContextPersistenceFilter@18918d70, org.springframework.security.web.header.HeaderWriterFilter@75507e68, org.springframework.security.web.csrf.CsrfFilter@c414eb3, org.springframework.security.web.authentication.logout.LogoutFilter@b5bddfe, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@33425171, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7304ca87, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7c07023, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a45e29f, org.springframework.security.web.session.SessionManagementFilter@50b2ba2c, org.springframework.security.web.access.ExceptionTranslationFilter@31de8099, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@239bc43f]
+2026-10-28 20:20:07.814  INFO 37680 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-10-28 20:20:08.035  INFO 37680 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2026-10-28 20:20:08.068  INFO 37680 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2026-10-28 20:20:08.075  INFO 37680 --- [main] P.PurchaseManagementApplication          : Started PurchaseManagementApplication in 2.936 seconds (JVM running for 3.113)
+2026-10-28 20:20:08.783  INFO 37680 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-28 20:20:08.783  INFO 37680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-28 20:20:08.784  INFO 37680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-10-28 20:20:16.944  INFO 37680 --- [http-nio-8080-exec-4] P.config.AuthenticationLogging           : Вход пользователя admin
+2026-10-28 20:20:16.982  INFO 37680 --- [http-nio-8080-exec-5] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 20:20:25.567  INFO 37680 --- [http-nio-8080-exec-10] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 20:20:28.009  INFO 37680 --- [http-nio-8080-exec-2] P.controller.ShopController              : Пользователь admin открыл список магазинов
+2026-10-28 20:29:09.730  INFO 37680 --- [http-nio-8080-exec-5] P.config.AuthenticationLogging           : Выход пользователя admin
+2026-10-28 20:32:24.989  INFO 37680 --- [http-nio-8080-exec-5] P.service.UserServiceImpl                : Регистрация пользователя anna с ролью READ_ONLY
+2026-10-28 20:33:42.735  INFO 37680 --- [http-nio-8080-exec-1] P.config.AuthenticationLogging           : Вход пользователя anna
+2026-10-28 20:33:42.753  INFO 37680 --- [http-nio-8080-exec-2] P.controller.ProductController           : Пользователь anna открыл список покупок
+2026-10-28 20:36:22.986  INFO 37680 --- [http-nio-8080-exec-6] P.config.AuthenticationLogging           : Выход пользователя anna
+2026-10-28 20:36:31.355  INFO 37680 --- [http-nio-8080-exec-9] P.config.AuthenticationLogging           : Вход пользователя admin
+2026-10-28 20:36:31.369  INFO 37680 --- [http-nio-8080-exec-10] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 20:38:49.192  INFO 37680 --- [http-nio-8080-exec-4] P.controller.ShopController              : Пользователь admin открыл список магазинов
+2026-10-28 20:38:59.366  INFO 37680 --- [http-nio-8080-exec-8] P.service.UserServiceImpl                : Пользователь admin добавил роль USER пользователю anna
+2026-10-28 20:39:02.054  INFO 37680 --- [http-nio-8080-exec-1] P.config.AuthenticationLogging           : Выход пользователя admin
+2026-10-28 20:39:15.522  INFO 37680 --- [http-nio-8080-exec-2] P.config.AuthenticationLogging           : Вход пользователя admin
+2026-10-28 20:39:15.536  INFO 37680 --- [http-nio-8080-exec-3] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 20:39:17.516  INFO 37680 --- [http-nio-8080-exec-9] P.controller.ShopController              : Пользователь admin открыл список магазинов
+2026-10-28 20:40:02.393  INFO 37680 --- [http-nio-8080-exec-4] P.config.AuthenticationLogging           : Выход пользователя admin
+2026-10-28 20:40:10.130  WARN 37680 --- [http-nio-8080-exec-7] P.config.AuthenticationLogging           : Неуспешная попытка входа
+2026-10-28 20:40:20.054  INFO 37680 --- [http-nio-8080-exec-10] P.config.AuthenticationLogging           : Вход пользователя anna
+2026-10-28 20:40:20.069  INFO 37680 --- [http-nio-8080-exec-1] P.controller.ProductController           : Пользователь anna открыл список покупок
+2026-10-28 20:40:53.282  INFO 37680 --- [http-nio-8080-exec-3] P.controller.ShopController              : Пользователь anna открыл список магазинов
+2026-10-28 20:41:50.174  INFO 37680 --- [http-nio-8080-exec-8] PurchaseManagement.service.ShopService   : Пользователь anna сохранил магазин id=6
+2026-10-28 20:41:50.183  INFO 37680 --- [http-nio-8080-exec-9] P.controller.ShopController              : Пользователь anna открыл список магазинов
+2026-10-28 20:42:27.656  INFO 37680 --- [http-nio-8080-exec-1] P.controller.ProductController           : Пользователь anna открыл список покупок
+2026-10-28 20:43:14.126  INFO 37680 --- [http-nio-8080-exec-6] P.service.ProductService                 : Пользователь anna сохранил покупку id=9
+2026-10-28 20:43:14.135  INFO 37680 --- [http-nio-8080-exec-7] P.controller.ProductController           : Пользователь anna открыл список покупок
+2026-10-28 20:44:28.321  INFO 37680 --- [http-nio-8080-exec-3] P.service.ProductService                 : Пользователь anna сохранил покупку id=9
+2026-10-28 20:44:28.333  INFO 37680 --- [http-nio-8080-exec-4] P.controller.ProductController           : Пользователь anna открыл список покупок
+2026-10-28 20:45:01.570  INFO 37680 --- [http-nio-8080-exec-6] P.controller.ShopController              : Пользователь anna открыл список магазинов
+2026-10-28 20:45:06.824  INFO 37680 --- [http-nio-8080-exec-10] PurchaseManagement.service.ShopService   : Пользователь anna сохранил магазин id=6
+2026-10-28 20:45:06.832  INFO 37680 --- [http-nio-8080-exec-1] P.controller.ShopController              : Пользователь anna открыл список магазинов
+2026-10-28 20:47:36.134  INFO 37680 --- [http-nio-8080-exec-7] P.controller.CalculationController       : Пользователь anna выполнил проверку бюджета
+2026-10-28 20:48:06.171  INFO 37680 --- [http-nio-8080-exec-9] P.controller.CalculationController       : Пользователь anna выполнил проверку бюджета
+2026-10-28 20:49:05.055  INFO 37680 --- [http-nio-8080-exec-2] P.config.AuthenticationLogging           : Выход пользователя anna
+2026-10-28 20:49:12.545  INFO 37680 --- [http-nio-8080-exec-5] P.config.AuthenticationLogging           : Вход пользователя test
+2026-10-28 20:49:12.555  INFO 37680 --- [http-nio-8080-exec-6] P.controller.ProductController           : Пользователь test открыл список покупок
+2026-10-28 20:50:35.030  INFO 37680 --- [http-nio-8080-exec-10] P.controller.ShopController              : Пользователь test открыл список магазинов
+2026-10-28 20:51:39.961  INFO 37680 --- [http-nio-8080-exec-4] P.config.AuthenticationLogging           : Выход пользователя test
+2026-10-28 20:51:51.551  INFO 37680 --- [http-nio-8080-exec-7] P.config.AuthenticationLogging           : Вход пользователя admin
+2026-10-28 20:51:51.562  INFO 37680 --- [http-nio-8080-exec-8] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 20:52:37.808  INFO 37680 --- [http-nio-8080-exec-10] P.controller.ShopController              : Пользователь admin открыл список магазинов
+2026-10-28 20:53:45.441  INFO 37680 --- [http-nio-8080-exec-4] P.config.AuthenticationLogging           : Выход пользователя admin
+2026-10-28 20:53:55.782  INFO 37680 --- [http-nio-8080-exec-7] P.config.AuthenticationLogging           : Вход пользователя test
+2026-10-28 20:53:55.790  INFO 37680 --- [http-nio-8080-exec-8] P.controller.ProductController           : Пользователь test открыл список покупок
+2026-10-28 20:53:57.431  INFO 37680 --- [http-nio-8080-exec-10] P.controller.ShopController              : Пользователь test открыл список магазинов
+2026-10-28 20:54:07.506  INFO 37680 --- [http-nio-8080-exec-3] P.controller.ShopController              : Пользователь test открыл список магазинов
+2026-10-28 20:54:26.809  INFO 37680 --- [http-nio-8080-exec-5] P.controller.ProductController           : Пользователь test открыл список покупок
+2026-10-28 20:54:31.621  INFO 37680 --- [http-nio-8080-exec-9] P.service.ProductService                 : Пользователь test сохранил покупку id=8
+2026-10-28 20:54:31.630  INFO 37680 --- [http-nio-8080-exec-10] P.controller.ProductController           : Пользователь test открыл список покупок
+2026-10-28 20:54:32.922  INFO 37680 --- [http-nio-8080-exec-2] P.controller.ShopController              : Пользователь test открыл список магазинов
+2026-10-28 20:54:34.433  INFO 37680 --- [http-nio-8080-exec-4] PurchaseManagement.service.ShopService   : Пользователь test удалил магазин id=5
+2026-10-28 20:54:34.444  INFO 37680 --- [http-nio-8080-exec-5] P.controller.ShopController              : Пользователь test открыл список магазинов
+2026-10-28 20:55:20.749  INFO 37680 --- [http-nio-8080-exec-8] P.controller.ProductController           : Пользователь test открыл список покупок
+2026-10-28 20:55:23.945  INFO 37680 --- [http-nio-8080-exec-10] P.service.ProductService                 : Пользователь test удалил покупку id=8
+2026-10-28 20:55:23.953  INFO 37680 --- [http-nio-8080-exec-1] P.controller.ProductController           : Пользователь test открыл список покупок
+2026-10-28 20:57:23.788  INFO 37680 --- [http-nio-8080-exec-5] P.config.AuthenticationLogging           : Выход пользователя test
+2026-10-28 20:57:34.143  INFO 37680 --- [http-nio-8080-exec-8] P.config.AuthenticationLogging           : Вход пользователя admin
+2026-10-28 20:57:34.151  INFO 37680 --- [http-nio-8080-exec-9] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 21:03:40.703  INFO 37680 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-28 21:03:40.705  INFO 37680 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-10-28 21:03:40.706  INFO 37680 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-10-28 21:15:36.880  INFO 29912 --- [main] P.PurchaseManagementApplication          : Starting PurchaseManagementApplication using Java 17.0.20.1 on DESKTOP-MCL8UCT with PID 29912 (C:\Users\1\Desktop\proekt\spring-boot-coursework\target\classes started by 1 in C:\Users\1\Desktop\proekt\spring-boot-coursework)
+2026-10-28 21:15:36.881  INFO 29912 --- [main] P.PurchaseManagementApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-10-28 21:15:37.324  INFO 29912 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-28 21:15:37.362  INFO 29912 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 4 JPA repository interfaces.
+2026-10-28 21:15:37.728  INFO 29912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2026-10-28 21:15:37.733  INFO 29912 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-28 21:15:37.734  INFO 29912 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2026-10-28 21:15:37.790  INFO 29912 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-10-28 21:15:37.790  INFO 29912 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 886 ms
+2026-10-28 21:15:38.012  INFO 29912 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-10-28 21:15:38.060  INFO 29912 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2026-10-28 21:15:38.177  INFO 29912 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-10-28 21:15:38.230  INFO 29912 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-28 21:15:38.352  INFO 29912 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-28 21:15:38.365  INFO 29912 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2026-10-28 21:15:38.670  INFO 29912 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-10-28 21:15:38.673  INFO 29912 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-28 21:15:39.135  INFO 29912 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1f02b6d1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@66a50c93, org.springframework.security.web.context.SecurityContextPersistenceFilter@1477d4e6, org.springframework.security.web.header.HeaderWriterFilter@524dd373, org.springframework.security.web.csrf.CsrfFilter@774189d0, org.springframework.security.web.authentication.logout.LogoutFilter@58fbfefb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4a013b23, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b791e6e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@583b4af4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5bddd141, org.springframework.security.web.session.SessionManagementFilter@b75f3f4, org.springframework.security.web.access.ExceptionTranslationFilter@1ba98508, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@63e0057a]
+2026-10-28 21:15:39.318  INFO 29912 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-10-28 21:15:39.510  INFO 29912 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2026-10-28 21:15:39.539  INFO 29912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2026-10-28 21:15:39.548  INFO 29912 --- [main] P.PurchaseManagementApplication          : Started PurchaseManagementApplication in 2.865 seconds (JVM running for 3.037)
+2026-10-28 21:15:42.115  INFO 29912 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-28 21:15:42.115  INFO 29912 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-28 21:15:42.116  INFO 29912 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-10-28 21:15:48.445  INFO 29912 --- [http-nio-8080-exec-4] P.config.AuthenticationLogging           : Вход пользователя admin
+2026-10-28 21:15:48.477  INFO 29912 --- [http-nio-8080-exec-5] P.controller.ProductController           : Пользователь admin открыл список покупок
+2026-10-28 21:16:14.636  INFO 29912 --- [http-nio-8080-exec-7] P.config.AuthenticationLogging           : Выход пользователя admin
+2026-10-28 21:16:23.272  INFO 29912 --- [http-nio-8080-exec-10] P.config.AuthenticationLogging           : Вход пользователя test
+2026-10-28 21:16:23.287  INFO 29912 --- [http-nio-8080-exec-1] P.controller.ProductController           : Пользователь test открыл список покупок
+2026-10-28 21:55:56.410  INFO 29912 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-28 21:55:56.412  INFO 29912 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-10-28 21:55:56.413  INFO 29912 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

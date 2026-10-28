@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments :: head('Магазин')}"></head>
+<body>
+<nav th:replace="~{fragments :: nav}"></nav>
+<main class="container pb-4 editor-page">
+<h1 th:text="${shop.id == null ? 'Добавление магазина' : 'Изменение магазина'}"></h1>
+<form th:action="@{/saveShop}" th:object="${shop}" method="post" class="col-md-7">
+    <input type="hidden" th:field="*{id}">
+    <label for="name" class="form-label">Название</label>
+    <input id="name" th:field="*{name}" class="form-control" maxlength="100" required>
+    <p th:errors="*{name}" class="text-danger"></p>
+    <label for="address" class="form-label">Адрес</label>
+    <input id="address" th:field="*{address}" class="form-control" maxlength="200" required>
+    <p th:errors="*{address}" class="text-danger"></p>
+    <button class="btn btn-primary">Сохранить</button><a class="ms-2" th:href="@{/shops}">Вернуться к списку</a>
+</form>
+</main>
+</body>
+</html>

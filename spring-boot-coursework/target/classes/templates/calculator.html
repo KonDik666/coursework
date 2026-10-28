@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments :: head('Проверка бюджета')}"></head>
+<body>
+<nav th:replace="~{fragments :: nav}"></nav>
+<main class="container pb-4">
+<h1>Проверка бюджета</h1>
+<p>Введите бюджет, чтобы узнать, хватит ли его на покупки из вашего списка.</p>
+<p th:if="${ownRecordsOnly}">В расчёте учитываются только ваши покупки.</p>
+<p th:unless="${ownRecordsOnly}">В расчёте учитываются все покупки, доступные вам для просмотра.</p>
+<div class="budget-grid">
+<section class="budget-entry">
+<h2>Какую сумму планируете?</h2>
+<form th:action="@{/calculator}" th:object="${calculation}" method="post">
+    <label for="budget" class="form-label">Бюджет, руб.</label>
+    <input id="budget" th:field="*{budget}" type="number" min="0.01" max="999999999999.99" step="0.01" class="form-control" required>
+    <p th:errors="*{budget}" class="text-danger"></p>
+    <button class="btn btn-primary">Проверить бюджет</button>
+</form>
+</section>
+<section class="budget-summary">
+<p>Общая стоимость</p>
+<p class="amount"><span id="total" th:text="${total}"></span> <small>руб.</small></p>
+<div th:if="${remaining != null}">
+    <p th:if="${remaining.signum() > 0}" class="alert alert-success">Бюджета хватает. Остаток: <strong id="remaining" th:text="${difference}"></strong> руб.</p>
+    <p th:if="${remaining.signum() < 0}" class="alert alert-danger">Бюджет превышен на <strong id="excess" th:text="${difference}"></strong> руб.</p>
+    <p th:if="${remaining.signum() == 0}" class="alert alert-info">Стоимость покупок равна бюджету. Остаток: <strong id="remaining">0.00</strong> руб.</p>
+    <p>Использовано бюджета: <strong id="usedPercent" th:text="${usedPercent}"></strong>%.</p>
+</div>
+</section>
+</div>
+<a class="back-link" th:href="@{/products}">← К списку покупок</a>
+</main>
+</body>
+</html>

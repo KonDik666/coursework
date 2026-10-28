@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments :: head('Покупка')}"></head>
+<body>
+<nav th:replace="~{fragments :: nav}"></nav>
+<main class="container pb-4 editor-page">
+<h1 th:text="${product.id == null ? 'Добавление покупки' : 'Изменение покупки'}"></h1>
+<p th:if="${#lists.isEmpty(shops)}" class="alert alert-info">Сначала <a th:href="@{/addShopForm}">добавьте магазин</a>.</p>
+<form th:action="@{/saveProduct}" th:object="${product}" method="post" class="col-md-7">
+    <input type="hidden" th:field="*{id}">
+    <label for="name" class="form-label">Название</label>
+    <input id="name" th:field="*{name}" class="form-control" maxlength="100" required><p th:errors="*{name}" class="text-danger"></p>
+    <label for="price" class="form-label">Цена за единицу, руб.</label>
+    <input id="price" th:field="*{price}" type="number" min="0.01" max="9999999999.99" step="0.01" class="form-control" required><p th:errors="*{price}" class="text-danger"></p>
+    <label for="quantity" class="form-label">Количество</label>
+    <input id="quantity" th:field="*{quantity}" type="number" min="1" max="1000000" class="form-control" required><p th:errors="*{quantity}" class="text-danger"></p>
+    <label for="shopId" class="form-label">Магазин</label>
+    <select id="shopId" th:field="*{shopId}" class="form-select" required><option value="">Выберите магазин</option><option th:each="shop : ${shops}" th:value="${shop.id}" th:text="${shop.name}"></option></select>
+    <p th:errors="*{shopId}" class="text-danger"></p>
+    <button class="btn btn-primary" th:disabled="${#lists.isEmpty(shops)}">Сохранить</button><a class="ms-2" th:href="@{/products}">Вернуться к списку</a>
+</form>
+</main>
+</body>
+</html>

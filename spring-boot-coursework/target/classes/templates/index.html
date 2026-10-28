@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments :: head('Главная')}"></head>
+<body>
+<nav th:replace="~{fragments :: nav}"></nav>
+<main class="container pb-4">
+<section class="hero">
+<div class="hero-copy">
+<h1>Учёт покупок и семейного бюджета</h1>
+<p>Войдите в приложение, чтобы просмотреть данные. Новые пользователи получают роль READ_ONLY.
+    Для добавления и изменения записей администратор назначает роль USER.</p>
+<div th:unless="${signedIn}" class="d-flex gap-2">
+    <a class="btn btn-primary" th:href="@{/login}">Войти</a>
+    <a class="btn btn-outline-primary" th:href="@{/register}">Зарегистрироваться</a>
+</div>
+<div th:if="${signedIn}">
+    <p th:if="${isAdmin}">Ваша роль — ADMIN. Доступны все записи и управление ролями.</p>
+    <p th:if="${ownRecordsOnly}">Ваша роль — USER. В списках отображаются только ваши записи.</p>
+    <p th:unless="${isWriter}">Ваша роль — READ_ONLY. Доступен просмотр записей и расчёт стоимости.</p>
+    <a class="btn btn-primary" th:href="@{/products}">Открыть покупки</a>
+</div>
+</div>
+<img class="hero-photo" th:src="@{/images/shopping.png}" alt="Сумка с продуктами после покупок">
+</section>
+</main>
+</body>
+</html>

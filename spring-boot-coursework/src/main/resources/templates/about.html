@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments :: head('О приложении')}"></head>
+<body>
+<nav th:replace="~{fragments :: nav}"></nav>
+<main class="container pb-4">
+<h1>О приложении</h1>
+<p>Веб-приложение для учёта покупок и расчёта их стоимости разработано в рамках курсового проекта.</p>
+<h2 class="h4">Разработчик</h2>
+<p>Пестряков Никита Максимович, группа РИЗ250213у. УрФУ, 2026 год.</p>
+<h2 class="h4">Возможности</h2>
+<p>Просмотр и ведение покупок и магазинов, проверка бюджета по сохранённым покупкам, регистрация и вход.
+    READ_ONLY разрешает просмотр, USER работает со своими записями, ADMIN — со всеми данными и ролями.</p>
+<p>Технологии: Java 17, Spring Boot 2.7.8, Spring Security, Spring Data JPA, Thymeleaf, Lombok и H2.</p>
+<a class="btn btn-primary" th:href="@{/index}">Вернуться на главную</a>
+</main>
+</body>
+</html>

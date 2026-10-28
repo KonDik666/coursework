@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head(title)">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title th:text="${title} + ' — Учёт покупок'">Учёт покупок</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{/css/app.css}">
+</head>
+<body>
+<nav th:fragment="nav" class="navbar navbar-expand app-nav">
+    <div class="container flex-wrap gap-2">
+        <a class="navbar-brand" th:href="@{/index}"><span class="brand-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 8h14l1 13H4L5 8Z"/><path d="M8 9V6a4 4 0 0 1 8 0v3"/></svg></span>Учёт покупок</a>
+        <div class="navbar-nav flex-wrap">
+            <a class="nav-link" th:classappend="${#httpServletRequest.requestURI == '/index' or #httpServletRequest.requestURI == '/' ? 'active' : ''}" th:href="@{/index}">Главная</a>
+            <a class="nav-link" th:if="${signedIn}" th:classappend="${#httpServletRequest.requestURI == '/products' ? 'active' : ''}" th:href="@{/products}">Покупки</a>
+            <a class="nav-link" th:if="${signedIn}" th:classappend="${#httpServletRequest.requestURI == '/shops' ? 'active' : ''}" th:href="@{/shops}">Магазины</a>
+            <a class="nav-link" th:if="${signedIn}" th:classappend="${#httpServletRequest.requestURI == '/calculator' ? 'active' : ''}" th:href="@{/calculator}">Расчёт</a>
+            <a class="nav-link" th:if="${isAdmin}" th:classappend="${#httpServletRequest.requestURI == '/users' ? 'active' : ''}" th:href="@{/users}">Роли пользователей</a>
+            <a class="nav-link" th:classappend="${#httpServletRequest.requestURI == '/about' ? 'active' : ''}" th:href="@{/about}">О приложении</a>
+            <a class="nav-link" th:unless="${signedIn}" th:href="@{/login}">Вход</a>
+            <a class="nav-link" th:unless="${signedIn}" th:href="@{/register}">Регистрация</a>
+        </div>
+        <div th:if="${signedIn}" class="account">
+            <span class="account-name" th:text="${loginName}"></span>
+            <form th:action="@{/logout}" method="post"><button class="btn btn-outline-secondary btn-sm">Выйти</button></form>
+        </div>
+    </div>
+</nav>
+<div th:fragment="messages">
+    <p th:if="${message}" th:text="${message}" class="alert alert-success"></p>
+    <p th:if="${errorMessage}" th:text="${errorMessage}" class="alert alert-danger"></p>
+</div>
+</body>
+</html>
